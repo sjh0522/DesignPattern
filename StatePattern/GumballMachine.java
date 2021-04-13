@@ -19,7 +19,7 @@ public class GumballMachine {
         else state = soldOutState;    	
     }
     
-    // state¿¡°Ô À§ÀÓ
+    // stateì— ìœ„ì„
     public void insertQuarter() {
     	state.insertQuarter();
     }
