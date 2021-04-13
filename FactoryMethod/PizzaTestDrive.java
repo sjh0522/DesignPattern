@@ -3,11 +3,11 @@ package FactoryMethod;
 public class PizzaTestDrive {
 
 	public static void main(String[] args) {
-		// °¢ ÁöÁ¡¿¡ ¸Â´Â µÎ ÇÇÀÚ °¡°Ô¸¦ »ı¼ºÇÑ´Ù.
+		// ê° ì§€ì ì— ë§ëŠ” ë‘ í”¼ì ê°€ê²Œë¥¼ ìƒì„±í•œë‹¤.
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
         
-        // °¢ ÁöÁ¡¿¡ ¸Â´Â ÇÇÀÚ¸¦ ¸¸µç´Ù.
+        // ê° ì§€ì ì— ë§ëŠ” í”¼ìë¥¼ ë§Œë“ ë‹¤.
         Pizza pizza1 = nyStore.orderPizza("cheese");
         System.out.println("Ethan ordered a " + pizza1.getName() + "\n");
         //Pizza pizza2 = nyStore.orderPizza("veggie");
