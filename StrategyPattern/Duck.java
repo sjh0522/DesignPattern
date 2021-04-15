@@ -2,7 +2,7 @@ package StrategyPattern;
 
 public abstract class Duck {
 	
-	// attribute·Î interface ref. ¸¦ °¡Áö°í ÀÖÀ½
+	// attributeë¡œ interface ref. ë¥¼ ê°€ì§€ê³  ìˆìŒ
 	QuackBehavior quackBehavior;
 	FlyBehavior flyBehavior;
 	
@@ -15,7 +15,7 @@ public abstract class Duck {
 	}
 	
 	// delegate
-	// Behavior ref.¸¦ ÅëÂ°·Î ±³È¯
+	// Behavior ref.ë¥¼ í†µì§¸ë¡œ êµí™˜
 	public void setQuackBehavior(QuackBehavior qb) {
 		quackBehavior=qb;
 	}
