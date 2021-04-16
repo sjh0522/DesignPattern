@@ -2,7 +2,7 @@ package TemplateMethodPattern;
 
 public abstract class CaffeineBeverage {
 	/*
-	 *  final : SkeletonÀº subclass¿¡¼­ override ÇÏÁö ¸øÇÏµµ·Ï */
+	 *  final : Skeletonì€ subclassì—ì„œ override í•˜ì§€ ëª»í•˜ë„ë¡ */
 	final void prepareRecipe() { 
 		boilWater();
 		brew();
@@ -10,8 +10,8 @@ public abstract class CaffeineBeverage {
 		if(customerWantsCondiments()) addCondiments(); // hook method
 	}
 	
-	/* ÇÏÀ§ Class¿¡¼­ overrideÇÏÁö ¾ÊÀ¸¸é default·Î addCondiments() ¼öÇà
-	 * ÇÏÀ§ Class¿¡¼­ parent Class Èå¸§¿¡ °³ÀÔÇÏ°í ½ÍÀ»¶§ override */
+	/* í•˜ìœ„ Classì—ì„œ overrideí•˜ì§€ ì•Šìœ¼ë©´ defaultë¡œ addCondiments() ìˆ˜í–‰
+	 * í•˜ìœ„ Classì—ì„œ parent Class íë¦„ì— ê°œì…í•˜ê³  ì‹¶ì„ë•Œ override */
 	boolean customerWantsCondiments() {  
 		return true;
 	}
