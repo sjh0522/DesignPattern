@@ -1,15 +1,18 @@
 package ObserverPattern;
+import java.util.Observable;
+import java.util.Observer;
 
-public class CurrentConditionDisplay implements Observer, DisplayElement{
+public class CurrentConditionDisplay implements Observer, DisplayElement{ // Observer library
 	
 	private float temperature;
 	private float humidity;
 	private float pressure;
-	private Subject weatherData;
+	// private Subject weatherData -> Observable observable 변경
+	Observable observable; 
 	
-	public CurrentConditionDisplay(Subject weatherData) { // sub 하고자하는 pub의 정보
-		this.weatherData = weatherData;
-		weatherData.registerObserver(this); // 구독 신청
+	public CurrentConditionDisplay(Observable observable) { // sub 하고자하는 pub의 정보
+		this.observable = observable;
+		observable.addObserver(this); // 구독 신청
 	}
 	
 	@Override
