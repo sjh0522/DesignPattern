@@ -2,7 +2,7 @@ package BuilderPattern;
 
 public class AerospaceEngineer {
 	
-	private	AirplaneBuilder airplaneBuilder; // °°ÀÌ ÀÏÇÏ°Ô µÉ concreteBuilder ref
+	private	AirplaneBuilder airplaneBuilder; // ê°™ì´ ì¼í•˜ê²Œ ë  concreteBuilder ref
 	
 	public void	setAirplaneBuilder (AirplaneBuilder ab) {
 		airplaneBuilder = ab;
@@ -11,7 +11,7 @@ public class AerospaceEngineer {
 	public Airplane	getAirplane () {
 		return	airplaneBuilder.getAirplane();
 	}
-	// Airplane Á¶¸³ step,parts¸¸ ¾Ë°í, detailÀº ¸ğ¸§ 
+	// Airplane ì¡°ë¦½ step,partsë§Œ ì•Œê³ , detailì€ ëª¨ë¦„ 
 	public void	constructAirplane () {
 		airplaneBuilder.createNewAirplane();
 		airplaneBuilder.buildWings();
