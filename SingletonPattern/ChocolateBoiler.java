@@ -7,12 +7,12 @@ public class ChocolateBoiler {
 	private static ChocolateBoiler uniqueInstance;
 	
 	private ChocolateBoiler() {
-		// ÇÏ´ÂÀÏÀÌ ÀÖ¾îµµ »ó°ü¾øÀ½
+		// í•˜ëŠ”ì¼ì´ ìˆì–´ë„ ìƒê´€ì—†ìŒ
 		this.empty = true;
 		this.boiled = false;
 	}
 	
-	// Class nameÀÌ ¹İµå½Ã Singleton ÀÏ ÇÊ¿ä´Â ¾øÀ½
+	// Class nameì´ ë°˜ë“œì‹œ Singleton ì¼ í•„ìš”ëŠ” ì—†ìŒ
 	public static ChocolateBoiler getInstance() {
 		if(uniqueInstance == null) {
 			uniqueInstance = new ChocolateBoiler();
