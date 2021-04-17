@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class Menu extends MenuComponent{
 	
-	ArrayList<MenuComponent> menuCompenents = new ArrayList<MenuComponent>(); // ÀÚ½ÄÀ» º¸°ü
+	ArrayList<MenuComponent> menuCompenents = new ArrayList<MenuComponent>(); // ìì‹ì„ ë³´ê´€
 	String name;
 	String description;
 	
@@ -14,7 +14,7 @@ public class Menu extends MenuComponent{
 		this.description = description;
 	}
 	
-	// ÀÚ½Ä¿¡ ´ëÇÑ operation
+	// ìì‹ì— ëŒ€í•œ operation
 	public void add(MenuComponent menuComponent) {
 		menuCompenents.add(menuComponent);
 	}
@@ -35,10 +35,10 @@ public class Menu extends MenuComponent{
 		System.out.println(", " + getDescription());
 		System.out.println("---------------------");
 		
-		Iterator<MenuComponent> iterator = menuCompenents.iterator(); // ÀÚ½ÄµéÀ» ¼ø¼­´ë·Î ¼øÈ¸, ÀÚ½ÄµéÀÇ typeÀÌ menuItem,menuÀÎÁö´Â »ó°ü¾øÀ½
+		Iterator<MenuComponent> iterator = menuCompenents.iterator(); // ìì‹ë“¤ì„ ìˆœì„œëŒ€ë¡œ ìˆœíšŒ, ìì‹ë“¤ì˜ typeì´ menuItem,menuì¸ì§€ëŠ” ìƒê´€ì—†ìŒ
 		while (iterator.hasNext()) {
-			MenuComponent menuComponent = (MenuComponent) iterator.next(); // MenuComponent : menuItem, menu ¸¦ °øÅëÀûÀ¸·Î accessÇÒ ¼ö ÀÖ´Â ÀÏ°üµÈ type
-			menuComponent.print(); // menuComponentÀÇ type¿¡ µû¶ó °¢°¢ print() delegation
+			MenuComponent menuComponent = (MenuComponent) iterator.next(); // MenuComponent : menuItem, menu ë¥¼ ê³µí†µì ìœ¼ë¡œ accessí•  ìˆ˜ ìˆëŠ” ì¼ê´€ëœ type
+			menuComponent.print(); // menuComponentì˜ typeì— ë”°ë¼ ê°ê° print() delegation
 		}
 	}	
 
