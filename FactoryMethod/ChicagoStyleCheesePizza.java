@@ -7,4 +7,15 @@ public class ChicagoStyleCheesePizza extends Pizza{
 		sauce = "Plum Tomato Sauce";
 		toppings.add("Shredded Mozzarella Cheese");
 	}
+	void bake() {
+		System.out.println("Chicago-Bake for 25 min at 350");
+	}
+	
+	void cut() {
+		System.out.println("Chicago-cutting");
+	}
+	
+	void box() {
+		System.out.println("Chicago-boxing");
+	}
 }
