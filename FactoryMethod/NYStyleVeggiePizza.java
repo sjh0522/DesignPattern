@@ -7,5 +7,8 @@ public class NYStyleVeggiePizza extends Pizza{
 		sauce = "veggie Sauce";
 		toppings.add("toppings");
 	}
-
+	void bake() {
+		System.out.println("NY-Bake for 25 min at 350");
+	}
+	
 }
