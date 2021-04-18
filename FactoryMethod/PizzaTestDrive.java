@@ -3,7 +3,7 @@ package FactoryMethod;
 public class PizzaTestDrive {
 
 	public static void main(String[] args) {
-		// 각 지점에 맞는 두 피자 가게를 생성한다.
+	// 각 지점에 맞는 피자 가게를 생성한다.
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
         
